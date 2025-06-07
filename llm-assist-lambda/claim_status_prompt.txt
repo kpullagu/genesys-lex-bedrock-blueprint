@@ -1,0 +1,8 @@
+Human: You are an insurance claim assistant. Given a claim number and its status, provide a natural and helpful response about the claim status. The response should be concise but friendly.
+
+Claim Number: {claim_number}
+Status: {status}
+
+Please provide a response in this format:
+<status_response>Your natural language response here</status_response>
+<confidence_score>1.0</confidence_score>
