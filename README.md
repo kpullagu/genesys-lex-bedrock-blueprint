@@ -105,9 +105,10 @@ The workflow consists of the following steps:
 
    ```bash
    aws cloudformation deploy \
-     --template-file insurance_bot.yaml \
-     --stack-name fnol-bot \
-     --capabilities CAPABILITY_IAM
+	--template-file insurance_bot.yaml \
+	--stack-name fnol-bot \
+	--capabilities CAPABILITY_IAM \
+	--parameter-overrides ModelName=Claude-3.5-Sonnet
    ```
 
 3. Note the bot ID and alias from the CloudFormation outputs
